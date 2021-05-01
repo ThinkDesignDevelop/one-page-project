@@ -55,7 +55,22 @@ a
   width: fit-content;
   font-size: 4rem;
   position: relative;
-  color: white;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: 1.5s;
+}
+
+#hero h1:nth-child(1)
+{
+  animation-delay: 1.5s;
+}
+#hero h1:nth-child(2)
+{
+  animation-delay: 2.5s;
+}
+#hero h1:nth-child(3   )
+{
+  animation-delay: 3.5s;
 }
 
 #hero h1 span
@@ -68,6 +83,19 @@ a
   background-color: crimson;
   animation: text_reveal_box 1s ease;
   animation-delay: 1s;
+}
+
+#hero h1:nth-child(1) span
+{
+  animation-delay: 1s;
+}
+#hero h1:nth-child(2) span
+{
+  animation-delay: 2s;
+}
+#hero h1:nth-child(3) span
+{
+  animation-delay: 3s;
 }
 
 #hero .cta
@@ -103,5 +131,11 @@ a
   100% {
     width: 0;
     left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+  100% {
+    color: white;
   }
 }
